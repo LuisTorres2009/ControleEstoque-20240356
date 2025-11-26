@@ -8,6 +8,8 @@ import lombok.AllArgsConstructor;
 import java.time.LocalDateTime;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "tb_vendas")
 @Getter
@@ -30,5 +32,6 @@ public class Venda {
     // Relacionamento 1:n (Uma Venda possui Múltiplos Itens)
     // O Cascade.ALL é importante para salvar os itens junto com a venda.
     @OneToMany(mappedBy = "venda", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
     private Set<ItemVenda> itens;
 }

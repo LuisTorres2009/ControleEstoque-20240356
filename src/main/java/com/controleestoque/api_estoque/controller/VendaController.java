@@ -29,7 +29,7 @@ public class VendaController {
     // GET /api/vendas
     @GetMapping
     public List<Venda> getAllVendas() {
-        return vendaRepository.findAll();
+        return vendaRepository.findAllWithCliente();
     }
 
     // GET /api/vendas/{id}

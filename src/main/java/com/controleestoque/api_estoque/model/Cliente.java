@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "tb_clientes")
 @Getter
@@ -26,5 +28,6 @@ public class Cliente {
     // Relacionamento 1:n (Um Cliente pode ter Múltiplas Vendas)
     // MappedBy indica que a chave estrangeira (FK) está na entidade Venda.
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
     private Set<Venda> vendas;
 }
