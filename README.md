@@ -2,8 +2,8 @@
 
 Este projeto estende uma API REST de Controle de Estoque (Spring Boot + JPA) para incorporar um módulo de **Vendas** e outro de **Clientes**. A funcionalidade central é a **lógica  de baixa automática do estoque** e o tratamento de erros com *rollback* em caso de insuficiência.
 
-Link do vídeo: https: https://drive.google.com/file/d/1Hn6SvUjrjn7SpIJWQsbq7OOi0c9wa6W8/view?usp=drive_link 
-(Veja em 1080p o vídeo para melhor resolução)
+Link do vídeo: https://drive.google.com/file/d/1Hn6SvUjrjn7SpIJWQsbq7OOi0c9wa6W8/view?usp=drive_link
+(Veja o vídeo em 1080p para melhor resolução)
 
 ---
 
